@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Strings as Factors</title>
-    <link>http://www.dismukes.io/post/</link>
-    <description>Recent content in Posts on Strings as Factors</description>
+    <title>Reproducible Research on Strings as Factors</title>
+    <link>http://www.dismukes.io/tags/reproducible-research/</link>
+    <description>Recent content in Reproducible Research on Strings as Factors</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>youremail@domain.com (Some Person)</managingEditor>
     <webMaster>youremail@domain.com (Some Person)</webMaster>
     <lastBuildDate>Fri, 14 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.dismukes.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.dismukes.io/tags/reproducible-research/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

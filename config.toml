@@ -16,31 +16,31 @@ pygmentsCodefencesGuessSyntax = true
 [Params]
   homeTitle = "Strings as Factors" # Set a different text for the header on the home page
   subtitle = "The personal website of Andrew Dismukes"
-  logo = "img/DSC_8188.jpg" # Expecting square dimensions
+  logo = "img/DSC_8188_square.jpg" # Expecting square dimensions
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
   comments = true
   readingTime = true
-  wordCount = true
+  wordCount = true 
   useHLJS = true
   socialShare = true
   delayDisqus = true
   showRelatedPosts = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
-[[Params.bigimg]]
-  src = "img/triangle.jpg"
-  desc = "Triangle"
+#[[Params.bigimg]]
+ # src = "img/triangle.jpg"
+  #desc = "Triangle"
 [[Params.bigimg]]
   src = "img/sphere.jpg"
   desc = "Sphere"
   # position: see values of CSS background-position.
   position = "center top"
-[[Params.bigimg]]
-  src = "img/hexagon.jpg"
-  desc = "Hexagon"
+#[[Params.bigimg]]
+ # src = "img/hexagon.jpg"
+  #desc = "Hexagon"
 
 [Author]
   name = "Some Person"

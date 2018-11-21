@@ -1,0 +1,62 @@
+---
+title: Git for RR workflow, part one
+author: Andrew Dismukes
+date: '2017-07-14'
+slug: git-for-rr-workflow-part-one
+categories:
+  - Methods
+tags:
+  - Reproducible Research
+type: ''
+subtitle: ''
+image: ''
+---
+The first step in a reproducible research workflow starts with Version Control. If you are unfamiliar with Version Control Systems, I'll provide a brief overview of git.  If you are already familiar with git, skip this. There are other programs that accomplish similar ends, but I'm most familiar with git and github, so I’m going to limit my discussion to those tools.
+
+Git was originally created to track development of the Linux kernel. The name itself can mean a couple of different things. It's common slang. As an acronym, “Global Information Tracker”. It sounds like “get”.  This isn’t just Apocrypha, it's a metaphor for the program, because it’s hard to really pin down the git ecosystem to one function, as we will see.
+
+From the beginning, however, git serves to organize and track iterations of a project - ‘version control’. This seems like a simple task, but it gets arcane pretty quickly, especially when branches, forks, and misplaced heads get involved.
+
+So, we’re not going to start with a file. We’re going to start with a folder to hold our as yet nonexistent file. I’d recommend starting any project by knowing just where you want to keep it. Yes, I know you have Dropbox, and yes, you should keep reading.
+
+Let’s not start with a folder on your computer. Let’s start with a github remote repository, and for that, you need a github account.
+
+So, go make one. That part is pretty self-explanatory.
+
+Now, create a new repository in your github account. You can initialize it with a readme file, and it’s fine if it’s public (though be aware that anything you put in that folder is, also, public - most of my repo’s are private so consider paying for a private account.) Name it something that is useful.
+
+Now, you need to download git onto your computer. It’s free and open source. Head here to do so, and follow the download and install instructions.
+
+At this point you should have a remote repository hosted on github and git installed locally on your computer. You need to tell git who you are, so navigate to the newly installed git folder in program files and open up the git bash interface. This is a command line interface; if you have not spent much time working with the command line it is a good idea to get comfortable with it. You need to tell git who you are, so type:
+```
+git config --global user.name “Your Name”
+```
+And hit enter, followed by:
+```
+git config --global user.email yourname@whatever.com
+```
+making sure to use the email you initiated your github account with.
+
+Git knows who you are now. So...head back to your github account and sign in, and go to the empty (except for readme) repo you created previously, and click the clone or download icon. Use the copy function to copy the url of the repo. Now, head to the folder on your hard drive where you want to put your new project. Think carefully about how you organize this folder - It’s easier to have good organization from the beginning. Right click on that folder and select the new ‘open git bash here’ option from the menu. The git prompt should come back up, except this time it is set to the folder you have just created. (If it isn’t, type cd and the new location of the folder - cd means change directory). You really want to make sure what you do next is centered on the folder where you want your project to be. Now, at the git bash prompt, type git clone and copy (the key combo may be shift/control insert and not ctrl+v) the url you previously saved.
+```
+git clone “https://www.github.com/user/repo”
+```
+This is pretty self-explanatory - it clones the remote repo onto your local machine. Now you have a local copy of the empty repo (except for the readme), and a remote copy (the ‘remote origin’) on github. They are synchronized, as you haven’t done anything since you cloned the remote repository. Now, say you want to make a change. Create a new text file in the folder and type some gibberish. Now, you have a file in your local repo that isn’t in the remote origin. You have changed your local folder and you are ‘ahead’ of the remote. Also, you haven’t told git about this new file (though git still sees it). So, right click on your local folder again and open back up the git bash interface. First you need to add the file to the git index, to tell git it matters. Type
+```
+git add -A
+```
+Which basically means add everything to the git index. Your new file has been ‘staged’. The -A part means to stage everything, if you don’t want to do that you don’t need to be reading this.
+
+Now type
+```
+git commit -m  “Add a brief message noting what you have done - e.g. added gibberish text file.”
+```
+Now you have committed the new file in your local repository - the local branch is indexed and ahead of the remote (github). Let’s fix that.
+
+Type:
+```
+git push origin master
+```
+Which will package and send your updated index and file to your remote origin (github). If you log into your github account and open your repository you will see your gibberish file.
+
+This is the simplest git instance and there is a lot more to cover, but first - don’t worry. You don’t actually have to do this every time. Git works from within R and there is a super easy to use desktop interface now as well. But it’s best to start the way the program was meant to be used and to learn how to use git at the command line. We'll continue with git basics for reproducible research workflow in the next post, extend what git can be used for, and clarify some of the confusing terms we have introduced (stage, commit, master, origin, etc.) but for now, you have created and updated a repo, so that's a good start. 
