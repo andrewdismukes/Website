@@ -1,4 +1,4 @@
-baseurl = ""
+baseurl = "http://www.dismukes.io/"
 DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
 title = "Strings as Factors"
@@ -31,7 +31,7 @@ pygmentsCodefencesGuessSyntax = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 [[Params.bigimg]]
-  src = "static/img/triangle.jpg"
+  src = "img/triangle.jpg"
   desc = "Triangle"
 [[Params.bigimg]]
   src = "img/sphere.jpg"
