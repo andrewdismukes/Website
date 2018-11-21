@@ -16,7 +16,7 @@ pygmentsCodefencesGuessSyntax = true
 [Params]
   homeTitle = "Strings as Factors" # Set a different text for the header on the home page
   subtitle = "The personal website of Andrew Dismukes"
-  logo = "img/avatar-icon.png" # Expecting square dimensions
+  logo = "img/DSC_8188.jpg" # Expecting square dimensions
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
