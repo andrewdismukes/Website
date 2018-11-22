@@ -21,5 +21,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Shiny</title>
+      <link>http://www.dismukes.io/tags/shiny/</link>
+      <pubDate>Thu, 09 Nov 2017 00:00:00 +0000</pubDate>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>http://www.dismukes.io/tags/shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>http://www.dismukes.io/tags/twitter/</link>
+      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>http://www.dismukes.io/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -76,7 +76,7 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     name = "About"
     url = "page/about/"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     identifier = "samples"
@@ -100,8 +100,13 @@ pygmentsCodefencesGuessSyntax = true
     name = "Code Sample"
     url = "post/2016-03-08-code-sample"
     weight = 3
+    
+[[menu.main]]
+    name = "CV"
+    url = "http://reports.dismukes.io/CV/Dismukes_CV.html"
+    weight = 3
 
 [[menu.main]]
     name = "Tags"
     url = "tags"
-    weight = 3
+    weight = 4

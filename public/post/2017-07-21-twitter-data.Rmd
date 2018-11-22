@@ -1,0 +1,83 @@
+---
+title: Twitter Data
+author: Andrew Dismukes
+date: '2017-07-21'
+slug: twitter-data
+categories:
+  - Methods
+tags:
+  - Twitter
+type: ''
+subtitle: ''
+image: ''
+editor_options: 
+  chunk_output_type: inline
+---
+
+_Update November 2018: You now need to apply for a developer account to get a twitter API token._ 
+
+I'm not very good with words. 
+
+At least from an analytical sense - I'm more comfortable with numbers. I say this not to criticize qualitative work, but to be up front with my limitations. Lately, however, I've discovered the twitter API, and it's fun to play with. This is a lark, but it's pushed me to learn a few new tricks in R, and to work with packages I haven't used before, so a learning-lark. 
+
+It's actually not hard to get twitter data, which surprised me (although given the number of data sources that are just sitting around, from the 538 github account to the US census, it probably shouldn't have).  
+
+You need to be on twitter to get the data, so sign up if you haven't done so. You don't have to use it. The next step is to register a new twitter app here and log in with your new (or old) twitter user name and password. This 'app' is just to get an api key. Click on the create a new app button and fill in the required info - give the app a name and description, and provide a website (you do need to add a website; there are lots of ways to get a domain or you can just make one up. Or register with netlify; I'll have a post about their service and website creation using R markdown coming up soon.) Use http://127.0.0.1:1410 for the callback url. 
+
+This will provide you with an api key and api secret from twitter... and you are ready to go to get data. 
+
+From within R, you'll need a few packages installed and loaded:
+
+```{r eval=FALSE, include=FALSE}
+library(install.load)
+install_load('twitteR', 'dplyr', 'ggplot2', 'lubridate', 'network', 'sna', 'qdap', 'tm', 'forcats', 'tidytext', 'tidyverse', 'wordcloud')
+```
+
+And then you will need to log in to twitter using those new credentials you just got, by executing this command in R but replacing the quotes with your twitter-provided api credentials:
+
+```{r eval=FALSE, include=FALSE}
+setup_twitter_oauth("cyclIAfbzpZkxe6DXXG0aVFTn", 
+                    "OCviXUFqGOJSVKurfhfuawuzymM70VIpriSAnyX3wCtvysEPjg",
+                    "4281165078-3THeVdzS71z6Ay7brl78hcDQfJdddKWn0bDSCYQ",
+                    "pA5kk30pD9VjG4gruZ0Jr9rDIArfSCKksv1L24P7UtICb")
+
+```
+
+
+Now you're ready to go- it really is surprisingly easy. So...I wanted to take a look at word clouds, frequencies, etc., as a learning exercise. The first thing to do was to get some data:
+
+```{r eval=FALSE, include=FALSE}
+tw <- searchTwitter('#maga', n=100, since = '2018-11-01') 
+d <- twListToDF(tw)
+d$created = with_tz(d$created, 'America/Chicago')
+```
+
+What I've done is create an object by searching twitter for the phrase '#maga', returning 10000 tweets, in the last 24 hours. I've turned that into a data frame and set up time to match local. 
+
+Now:
+
+```{r eval=FALSE, include=FALSE}
+long <- d %>%
+  unnest_tokens(word, text)
+```
+
+This returns a tokenized tibble. A token, in this case, is a word. Each word is now a single unit of analysis nested within twitter user - each tweet will now be many rows long.  Our data set has gotten much, much bigger (mine was 125K rows long). But, this 'tidy text', stripped of punctuation and with some other useful manipulations (see here for documentation on this excellent package and function unnest_tokens) is much easier to work with to extract signal from the noise of twitter. I'm assuming a familiarity with both tidyverse and base R. 
+
+Another trick of tidytext is to strip filler words, so we'll take care of that too:
+
+```{r eval=FALSE, include=FALSE}
+data(stop_words)
+long <- long %>% 
+   anti_join(stop_words)
+```
+Now we have a data frame of individual words nested within user stripped of punctuation and filler, ready to graph:
+```{r eval=FALSE, include=FALSE}
+#wordcloud
+long %>%
+   count(word) %>%
+   mutate(word = removeNumbers(word)) %>%
+   filter(!grepl("maga|rt|https|t.co|ht|amp|t.c|trump|potus|realdonaldtrump|tcot", word)) %>%
+  with(wordcloud(word, n, max.words=100, colors=palette_light()))
+```
+
+To follow the pipe, we've taken the tibble 'long' of tweets containing '#maga', counted up the number of times a word appeared, removed just numbers, filtered out some twitter and hashtag specific terms with grepl, and piped that into a wordcloud of the top 100 words contained in tweets that use the hashtag maga, which looks like (as of 9 pm Wednesday November 21 2018):

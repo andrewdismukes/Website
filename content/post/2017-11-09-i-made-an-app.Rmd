@@ -1,0 +1,50 @@
+---
+title: I made an App!
+author: Andrew Dismukes
+date: '2017-11-09'
+slug: i-made-an-app
+categories:
+  - Methods
+tags:
+  - Shiny
+type: ''
+subtitle: ''
+image: ''
+---
+
+It wasn't that hard to do. I'll have a full tutorial coming, and perhaps a more developed and polished interface, but the bulk of the project is embedded below. It's written using Shiny in R. I've wanted to get more into interactive visualization for some time and just haven't had the time or energy to try to learn. In academia you don't really have a call (at present) to develop these interactive visualization skills for work - journal articles don't require interactives. But, it's a good thing to learn.
+
+This is a state by state look at gun sales over customized year ranges. Data came from the FBI NICS database, and was rendered to a csv by the New York Times using tabula. The full code is available below, and the app is hosted and embedded from here (thanks R studio!) and the data came from here.
+
+Note: This was more about creating a usable UI than the data itself, though it is interesting. This is raw data adisplayed, without accounting for seasonal trends, etc. - really with no manipulation at all. The point was to create an interactive data visualization and host and embed it on a webpage. There are a world of tweaks to both the graph and the UI thaat can be riffed off this base code.
+
+[Here is the app](https://andrewdismukes.shinyapps.io/Gunsales/)
+
+Here is the code:
+
+```{r eval=FALSE, include=FALSE}
+library(install.load)
+install_load("shiny", "shinythemes", "dplyr", "readr", "tidyverse")
+
+#Load data 
+DF <-read_csv("ncis_bystate_bymonth_bytype.csv")
+# Define UI
+ui<-fluidPage(theme = shinytheme("united"),
+              titlePanel("Gun Sales by State and Year"),
+              sidebarLayout(
+                sidebarPanel(
+                  selectInput(inputId = "state", label = strong("State"),
+                  sliderInput(inputId = "year", "Year", min = 1998, max = 2015,
+                              value = c(2000,2010),sep = "")),
+mainPanel(plotOutput("plot"),
+          tags$a(href="https://github.com/NYTimes/gunsales";,
+                  "Source: FBI NCIS Database via New York Times", target = "_blank") 
+server <- function(input, output) {
+  output$plot<-renderPlot({
+    filtered<-
+      DF %>% filter(year >= input$year[1], year <= input$year[2], state == input$state) 
+    
+ggplot(filtered, aes(month.num, guns_sold)) +
+geom_smooth(color = "#ff8000", fill = "#005c99", size = 2, alpha = 0.2) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank(), axis.line = element_line(colour = "black")) + labs(x = "Month" , y = "Guns Sold") })} 
+shinyApp(ui = ui, server=server) 
+```

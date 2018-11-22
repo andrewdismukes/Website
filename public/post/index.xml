@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>youremail@domain.com (Some Person)</managingEditor>
     <webMaster>youremail@domain.com (Some Person)</webMaster>
-    <lastBuildDate>Fri, 14 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://www.dismukes.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>I made an App!</title>
+      <link>http://www.dismukes.io/post/i-made-an-app/</link>
+      <pubDate>Thu, 09 Nov 2017 00:00:00 +0000</pubDate>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>http://www.dismukes.io/post/i-made-an-app/</guid>
+      <description>It wasn’t that hard to do. I’ll have a full tutorial coming, and perhaps a more developed and polished interface, but the bulk of the project is embedded below. It’s written using Shiny in R. I’ve wanted to get more into interactive visualization for some time and just haven’t had the time or energy to try to learn. In academia you don’t really have a call (at present) to develop these interactive visualization skills for work - journal articles don’t require interactives.</description>
+    </item>
+    
+    <item>
+      <title>Twitter Data</title>
+      <link>http://www.dismukes.io/post/twitter-data/</link>
+      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>http://www.dismukes.io/post/twitter-data/</guid>
+      <description>Update November 2018: You now need to apply for a developer account to get a twitter API token.
+I’m not very good with words.
+At least from an analytical sense - I’m more comfortable with numbers. I say this not to criticize qualitative work, but to be up front with my limitations. Lately, however, I’ve discovered the twitter API, and it’s fun to play with. This is a lark, but it’s pushed me to learn a few new tricks in R, and to work with packages I haven’t used before, so a learning-lark.</description>
+    </item>
     
     <item>
       <title>Git for RR workflow, part one</title>
