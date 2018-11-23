@@ -19,3 +19,27 @@ image: ''
 <p>Note: This was more about creating a usable UI than the data itself, though it is interesting. This is raw data adisplayed, without accounting for seasonal trends, etc. - really with no manipulation at all. The point was to create an interactive data visualization and host and embed it on a webpage. There are a world of tweaks to both the graph and the UI thaat can be riffed off this base code.</p>
 <p><a href="https://andrewdismukes.shinyapps.io/Gunsales/">Here is the app</a></p>
 <p>Here is the code:</p>
+<pre><code>library(install.load)
+install_load(&quot;shiny&quot;, &quot;shinythemes&quot;, &quot;dplyr&quot;, &quot;readr&quot;, &quot;tidyverse&quot;)
+
+#Load data 
+DF &lt;-read_csv(&quot;ncis_bystate_bymonth_bytype.csv&quot;)
+# Define UI
+ui&lt;-fluidPage(theme = shinytheme(&quot;united&quot;),
+              titlePanel(&quot;Gun Sales by State and Year&quot;),
+              sidebarLayout(
+                sidebarPanel(
+                  selectInput(inputId = &quot;state&quot;, label = strong(&quot;State&quot;),
+                  sliderInput(inputId = &quot;year&quot;, &quot;Year&quot;, min = 1998, max = 2015,
+                              value = c(2000,2010),sep = &quot;&quot;)),
+mainPanel(plotOutput(&quot;plot&quot;),
+          tags$a(href=&quot;https://github.com/NYTimes/gunsales&quot;;,
+                  &quot;Source: FBI NCIS Database via New York Times&quot;, target = &quot;_blank&quot;) 
+server &lt;- function(input, output) {
+  output$plot&lt;-renderPlot({
+    filtered&lt;-
+      DF %&gt;% filter(year &gt;= input$year[1], year &lt;= input$year[2], state == input$state) 
+    
+ggplot(filtered, aes(month.num, guns_sold)) +
+geom_smooth(color = &quot;#ff8000&quot;, fill = &quot;#005c99&quot;, size = 2, alpha = 0.2) + theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank(), axis.line = element_line(colour = &quot;black&quot;)) + labs(x = &quot;Month&quot; , y = &quot;Guns Sold&quot;) })} 
+shinyApp(ui = ui, server=server) </code></pre>

@@ -7,10 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>youremail@domain.com (Some Person)</managingEditor>
     <webMaster>youremail@domain.com (Some Person)</webMaster>
-    <lastBuildDate>Fri, 14 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://www.dismukes.io/tags/reproducible-research/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Structuring Analytic Flow</title>
+      <link>http://www.dismukes.io/post/structuring-analytic-flow/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>http://www.dismukes.io/post/structuring-analytic-flow/</guid>
+      <description>Part one: The Goal There are a lot of different ways to get to a fully reproducible output summary in data science. Your needs determine the structure of your approach. However, we operate under the overall principle of lossless data analysis.
+There are, at minimum, two relevant documents generated in an analysis of this type: the source code and the output (cleaned and formatted for human readability). I’m going to walk you through how I use source code and output in structured analysis (and why I think it is a preferred method).</description>
+    </item>
+    
+    <item>
+      <title>Structuring Analytic Flow</title>
+      <link>http://www.dismukes.io/post/structuring-analytic-flow/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>http://www.dismukes.io/post/structuring-analytic-flow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git for RR workflow, part two</title>
+      <link>http://www.dismukes.io/post/git-for-rr-workflow-part-two/</link>
+      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>http://www.dismukes.io/post/git-for-rr-workflow-part-two/</guid>
+      <description>It’s impossible to talk about how social scientists can use git without talking about project management so this will be a bit of a Frankenstein’s monster of a post.
+In the spirit of full transparency, I have to admit that I do not use and am probably unaware of the vast majority of git functionality. I’m not a computer programmer, I’m a psychologist. I don’t really need to know how to branch down alternate development pathways.</description>
+    </item>
     
     <item>
       <title>Git for RR workflow, part one</title>

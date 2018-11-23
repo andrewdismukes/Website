@@ -22,7 +22,7 @@ Note: This was more about creating a usable UI than the data itself, though it i
 
 Here is the code:
 
-```{r eval=FALSE, include=FALSE}
+```{}
 library(install.load)
 install_load("shiny", "shinythemes", "dplyr", "readr", "tidyverse")
 

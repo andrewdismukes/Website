@@ -14,7 +14,7 @@ editor_options:
   chunk_output_type: inline
 ---
 
-_Update November 2018: You now need to apply for a developer account to get a twitter API token._ 
+_Update November 2018: You now need to apply for a developer account to get a twitter API token. This process will still work, but not until your developer account ahs been approved. I have not applied for a dveloper account so the final output is no longer generating._ 
 
 I'm not very good with words. 
 
@@ -28,25 +28,23 @@ This will provide you with an api key and api secret from twitter... and you are
 
 From within R, you'll need a few packages installed and loaded:
 
-```{r eval=FALSE, include=FALSE}
+```{}
 library(install.load)
 install_load('twitteR', 'dplyr', 'ggplot2', 'lubridate', 'network', 'sna', 'qdap', 'tm', 'forcats', 'tidytext', 'tidyverse', 'wordcloud')
 ```
 
 And then you will need to log in to twitter using those new credentials you just got, by executing this command in R but replacing the quotes with your twitter-provided api credentials:
 
-```{r eval=FALSE, include=FALSE}
-setup_twitter_oauth("cyclIAfbzpZkxe6DXXG0aVFTn", 
-                    "OCviXUFqGOJSVKurfhfuawuzymM70VIpriSAnyX3wCtvysEPjg",
-                    "4281165078-3THeVdzS71z6Ay7brl78hcDQfJdddKWn0bDSCYQ",
-                    "pA5kk30pD9VjG4gruZ0Jr9rDIArfSCKksv1L24P7UtICb")
+```{}
+setup_twitter_oauth("credentials", 
+                    "credentials")
 
 ```
 
 
 Now you're ready to go- it really is surprisingly easy. So...I wanted to take a look at word clouds, frequencies, etc., as a learning exercise. The first thing to do was to get some data:
 
-```{r eval=FALSE, include=FALSE}
+```{}
 tw <- searchTwitter('#maga', n=100, since = '2018-11-01') 
 d <- twListToDF(tw)
 d$created = with_tz(d$created, 'America/Chicago')
@@ -56,7 +54,7 @@ What I've done is create an object by searching twitter for the phrase '#maga', 
 
 Now:
 
-```{r eval=FALSE, include=FALSE}
+```{}
 long <- d %>%
   unnest_tokens(word, text)
 ```
@@ -65,13 +63,13 @@ This returns a tokenized tibble. A token, in this case, is a word. Each word is 
 
 Another trick of tidytext is to strip filler words, so we'll take care of that too:
 
-```{r eval=FALSE, include=FALSE}
+```{}
 data(stop_words)
 long <- long %>% 
    anti_join(stop_words)
 ```
 Now we have a data frame of individual words nested within user stripped of punctuation and filler, ready to graph:
-```{r eval=FALSE, include=FALSE}
+```{}
 #wordcloud
 long %>%
    count(word) %>%

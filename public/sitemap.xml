@@ -3,8 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.dismukes.io/post/structuring-analytic-flow/</loc>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.dismukes.io/post/structuring-analytic-flow/</loc>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.dismukes.io/post/i-made-an-app/</loc>
     <lastmod>2017-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.dismukes.io/post/git-for-rr-workflow-part-two/</loc>
+    <lastmod>2017-08-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -24,7 +39,7 @@
   
   <url>
     <loc>http://www.dismukes.io/</loc>
-    <lastmod>2017-11-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -38,7 +53,7 @@
   
   <url>
     <loc>http://www.dismukes.io/categories/methods/</loc>
-    <lastmod>2017-11-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -49,13 +64,13 @@
   
   <url>
     <loc>http://www.dismukes.io/post/</loc>
-    <lastmod>2017-11-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.dismukes.io/tags/reproducible-research/</loc>
-    <lastmod>2017-07-14T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,7 +82,7 @@
   
   <url>
     <loc>http://www.dismukes.io/tags/</loc>
-    <lastmod>2017-07-14T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
