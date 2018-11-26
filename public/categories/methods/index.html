@@ -105,14 +105,14 @@ if (!doNotTrack) {
         
           
             <li class="navlinks-container">
-              <a class="navlinks-parent">Samples</a>
+              <a class="navlinks-parent">Selected Works</a>
               <div class="navlinks-children">
                 
-                  <a href="/post/2017-03-07-bigimg-sample">Big Image Sample</a>
+                  <a href="/page/papers/">Selected Publications</a>
                 
-                  <a href="/post/2017-03-05-math-sample">Math Sample</a>
+                  <a href="/page/conferences/">Conference Presentations</a>
                 
-                  <a href="/post/2016-03-08-code-sample">Code Sample</a>
+                  <a href="/page/code/">Code Sample</a>
                 
               </div>
             </li>
@@ -134,6 +134,12 @@ if (!doNotTrack) {
         
 
         
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
       </ul>
     </div>
 
@@ -151,6 +157,23 @@ if (!doNotTrack) {
 </nav>
 
 
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Strings as Factors</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     
@@ -274,49 +297,6 @@ if (!doNotTrack) {
                   Part one: The Goal There are a lot of different ways to get to a fully reproducible output summary in data science. Your needs determine the structure of your approach. However, we operate under the overall principle of lossless data analysis.
 There are, at minimum, two relevant documents generated in an analysis of this type: the source code and the output (cleaned and formatted for human readability). I’m going to walk you through how I use source code and output in structured analysis (and why I think it is a preferred method).
                   <a href="http://www.dismukes.io/post/structuring-analytic-flow/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="http://www.dismukes.io//tags/reproducible-research/">Reproducible Research</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="http://www.dismukes.io/post/structuring-analytic-flow/">
-                <h2 class="post-title">Structuring Analytic Flow</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on November 23, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;0&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;0&nbsp;words
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Andrew Dismukes
-  
-  
-</span>
-
-
-              </p>
-              <div class="post-entry">
-                
-                  
                 
               </div>
 
@@ -626,6 +606,18 @@ Git was originally created to track development of the Linux kernel.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
 <script src="http://www.dismukes.io/js/load-photoswipe.js"></script>
 
+
+<script>
+  (function() {
+    var cx = '011647212459177620610:1twphyh8epm';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 
 
 

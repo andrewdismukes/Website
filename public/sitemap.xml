@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/post/structuring-analytic-flow/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.dismukes.io/post/i-made-an-app/</loc>
     <lastmod>2017-11-09T00:00:00+00:00</lastmod>
   </url>
@@ -52,6 +47,14 @@
   </url>
   
   <url>
+    <loc>http://www.dismukes.io/page/code/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.dismukes.io/page/conferences/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.dismukes.io/categories/methods/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -72,6 +75,10 @@
     <loc>http://www.dismukes.io/tags/reproducible-research/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.dismukes.io/page/papers/</loc>
   </url>
   
   <url>

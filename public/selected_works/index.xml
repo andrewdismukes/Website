@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selected_Works on Strings as Factors</title>
+    <link>http://www.dismukes.io/selected_works/</link>
+    <description>Recent content in Selected_Works on Strings as Factors</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
+    <webMaster>youremail@domain.com (Some Person)</webMaster>
+    
+	<atom:link href="http://www.dismukes.io/selected_works/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>http://www.dismukes.io/selected_works/2018-11-26-papers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>youremail@domain.com (Some Person)</author>
+      <guid>http://www.dismukes.io/selected_works/2018-11-26-papers/</guid>
+      <description> ASSOCIATION BETWEEN NEIGHBORHOOD VIOLENCE AND BIOLOGICAL STRESS IN CHILDREN  Neighborhoods are important targets for interventions to reduce the effect of exposure to violence in the lives of children. These findings provide the first evidence that objective exposures to neighborhood-level violence influence both physiological and cellular markers of stress, even in children.
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -14,13 +14,13 @@ image: ''
 
 
 
-<div id="part-one-the-goal" class="section level2">
-<h2>Part one: The Goal</h2>
+<div id="part-one-the-goal" class="section level1">
+<h1>Part one: The Goal</h1>
 <p>There are a lot of different ways to get to a fully reproducible output summary in data science. Your needs determine the structure of your approach. However, we operate under the overall principle of lossless data analysis.</p>
 <p>There are, at minimum, two relevant documents generated in an analysis of this type: the source code and the output (cleaned and formatted for human readability). I’m going to walk you through how I use source code and output in structured analysis (and why I think it is a preferred method).</p>
 </div>
-<div id="part-two-the-coding-environment" class="section level2">
-<h2>Part two: The Coding Environment</h2>
+<div id="part-two-the-coding-environment" class="section level1">
+<h1>Part two: The Coding Environment</h1>
 <p>This document is written using a markdown extension for the text editor Atom, offered by Github. I prefer Atom as a general text editor because of the ease of git integration, low barrier to transition, range of support for tasks I personally spend a lot of time working on, helpful community, and because I generally like the look and feel of it. Atom is fairly intuitive.</p>
 <p>It is important to distinguish between a text editor like Atom, Vim, Sublime, Emacs, or VS code; an IDE, which is designed to compile, run and debug code from a single environment (though plugins allow many of the same functions of an IDE in a text editor), and a notebook format like Jupyter. These are different tools, but there is significant overlap in their functionality.</p>
 <p>I would caution against dedicating to a single tool. I use Atom, Rstudio and Jupyter Labs at different times, dependant on the desired product. Because the core tools I use for statistics - R and python - are programming languages, the front-ends are interchangeable in many ways, though each has a feature set that fits a task. I’m going to focus on markdown in Rstudio for analytic flow, but it is worth pointing out that Jupyter labs can run R, python, and many other languages, Rstudio can execute python code, and Atom is practically limitless with its plugin library.</p>
@@ -38,8 +38,8 @@ image: ''
 <p>Let’s take a few moments to recap what is available between these different front ends. I work most in Rstudio. Rstudio is great for marking down an analysis and rendering the formatted output to either html or pdf. If I am doing something special in python such as a matplotlib figure, depending on the preferred output format I would use nteract if I just wanted a quick code-folded pdf, Jupyter labs if I wanted a notebook I could share with full code and html or pdf output, or most likely Atom using hydrogen and Pweave. Pweave renders a markdown document that is pandoc-converted to PDF or html using the command line. This might seem unfamiliar or annoying to those who are used to Rstudio and the knit button, but it is not much more difficult, adding only a few extra keystrokes. Learning as I did with Emacs using Sweave for R, this workflow is fairly intuitive.</p>
 <p>Since (I assume) most people will focus on R for analysis, I’ll restrain the rest of this guide to that language, but it is worth knowing just how many great options you have at present.</p>
 </div>
-<div id="part-three-analytic-flow-with-r" class="section level2">
-<h2>Part three: Analytic flow with R</h2>
+<div id="part-three-analytic-flow-with-r" class="section level1">
+<h1>Part three: Analytic flow with R</h1>
 <p>I like to break up my analysis into discrete steps, and focus on one part of the problem at a time. The first step of my analytic flow is usually carried out with colleagues, and consists of defining specific hypotheses or exploratory aims. For the purposes of traditional analysis, we will assume specific hypotheses.</p>
 <p>So, in Rstudio, I will initialize a git repository (see previous posts) for a project, and my first step is to open an R project file in that folder. I am a very big fan of R projects. These project files make starting, stopping, resuming and synchronizing analysis quite easy and a are a great tool for environment maintenance.</p>
 <p>In the top level of that newly initialized working directory, I will open a new markdown document. This will be an index document. The header, or yaml-header in R markdown speak, is where you specify the output format. In this document, I will run an initial code chunk that defines my global environment and loads packages I need for the project. Here is an example of a yaml-header:</p>

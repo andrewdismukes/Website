@@ -12,13 +12,13 @@ subtitle: ''
 image: ''
 ---
 
-## Part one: The Goal
+# Part one: The Goal
 
 There are a lot of different ways to get to a fully reproducible output summary in data science. Your needs determine the structure of your approach. However, we operate under the overall principle of lossless data analysis.
 
 There are, at minimum, two relevant documents generated in an analysis of this type: the source code and the output (cleaned and formatted for human readability). I'm going to walk you through how I use source code and output in structured analysis (and why I think it is a preferred method).
 
-## Part two: The Coding Environment
+# Part two: The Coding Environment
 
 
 This document is written using a markdown extension for the text editor Atom, offered by Github. I prefer Atom as a general text editor because of the ease of git integration, low barrier to transition, range of support for tasks I personally spend a lot of time working on, helpful community, and because I generally like the look and feel of it. Atom is fairly intuitive.
@@ -47,7 +47,7 @@ Let's take a few moments to recap what is available between these different fron
 
 Since (I assume) most people will focus on R for analysis, I'll restrain the rest of this guide to that language, but it is worth knowing just how many great options you have at present.
 
-## Part three: Analytic flow with R
+# Part three: Analytic flow with R
 
 
 I like to break up my analysis into discrete steps, and focus on one part of the problem at a time. The first step of my analytic flow is usually carried out with colleagues, and consists of defining specific hypotheses or exploratory aims. For the purposes of traditional analysis, we will assume specific hypotheses. 

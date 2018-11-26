@@ -28,7 +28,7 @@ googleAnalytics = "UA-105310152-2"
   socialShare = true
   delayDisqus = true
   showRelatedPosts = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+  gcse = "011647212459177620610:1twphyh8epm" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 #[[Params.bigimg]]
  # src = "img/triangle.jpg"
@@ -79,26 +79,26 @@ googleAnalytics = "UA-105310152-2"
     weight = 2
 
 [[menu.main]]
-    identifier = "samples"
-    name = "Samples"
+    identifier = "Selected Works"
+    name = "Selected Works"
     weight = 2
 
 [[menu.main]]
-    parent = "samples"
-    name = "Big Image Sample"
-    url = "post/2017-03-07-bigimg-sample"
+    parent = "Selected Works"
+    name = "Selected Publications"
+    url = "page/papers/"
     weight = 1
 
 [[menu.main]]
-    parent = "samples"
-    name = "Math Sample"
-    url = "post/2017-03-05-math-sample"
+    parent = "Selected Works"
+    name = "Conference Presentations"
+    url = "page/conferences/"
     weight = 2
 
 [[menu.main]]
-    parent = "samples"
+    parent = "Selected Works"
     name = "Code Sample"
-    url = "post/2016-03-08-code-sample"
+    url = "page/code/"
     weight = 3
     
 [[menu.main]]
