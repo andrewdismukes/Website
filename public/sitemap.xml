@@ -3,98 +3,98 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.dismukes.io/post/structuring-analytic-flow/</loc>
+    <loc>/post/structuring-analytic-flow/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/post/i-made-an-app/</loc>
+    <loc>/post/i-made-an-app/</loc>
     <lastmod>2017-11-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/post/git-for-rr-workflow-part-two/</loc>
+    <loc>/post/git-for-rr-workflow-part-two/</loc>
     <lastmod>2017-08-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/post/twitter-data/</loc>
+    <loc>/post/twitter-data/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/post/git-for-rr-workflow-part-one/</loc>
+    <loc>/post/git-for-rr-workflow-part-one/</loc>
     <lastmod>2017-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/post/reproducible-research/</loc>
+    <loc>/post/reproducible-research/</loc>
     <lastmod>2017-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/</loc>
+    <loc>/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/page/about/</loc>
+    <loc>/page/about/</loc>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/page/code/</loc>
+    <loc>/page/code/</loc>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/page/conferences/</loc>
+    <loc>/page/conferences/</loc>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/categories/methods/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.dismukes.io/page/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.dismukes.io/post/</loc>
+    <loc>/categories/methods/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/tags/reproducible-research/</loc>
+    <loc>/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/page/papers/</loc>
+    <loc>/tags/reproducible-research/</loc>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/tags/shiny/</loc>
+    <loc>/page/papers/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/shiny/</loc>
     <lastmod>2017-11-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.dismukes.io/tags/twitter/</loc>
+    <loc>/tags/twitter/</loc>
     <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
