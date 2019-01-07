@@ -11,14 +11,5 @@
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Methods</title>
-      <link>/categories/methods/</link>
-      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/categories/methods/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

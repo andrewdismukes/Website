@@ -3,38 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/structuring-analytic-flow/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/i-made-an-app/</loc>
-    <lastmod>2017-11-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/git-for-rr-workflow-part-two/</loc>
-    <lastmod>2017-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/twitter-data/</loc>
-    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/git-for-rr-workflow-part-one/</loc>
-    <lastmod>2017-07-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/reproducible-research/</loc>
-    <lastmod>2017-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -55,25 +24,7 @@
   </url>
   
   <url>
-    <loc>/categories/methods/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/page/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/reproducible-research/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -82,20 +33,7 @@
   </url>
   
   <url>
-    <loc>/tags/shiny/</loc>
-    <lastmod>2017-11-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/twitter/</loc>
-    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

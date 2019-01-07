@@ -7,69 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>youremail@domain.com (Some Person)</managingEditor>
     <webMaster>youremail@domain.com (Some Person)</webMaster>
-    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Structuring Analytic Flow</title>
-      <link>/post/structuring-analytic-flow/</link>
-      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/post/structuring-analytic-flow/</guid>
-      <description>Part one: The Goal There are a lot of different ways to get to a fully reproducible output summary in data science. Your needs determine the structure of your approach. However, we operate under the overall principle of lossless data analysis.
-There are, at minimum, two relevant documents generated in an analysis of this type: the source code and the output (cleaned and formatted for human readability). I’m going to walk you through how I use source code and output in structured analysis (and why I think it is a preferred method).</description>
-    </item>
-    
-    <item>
-      <title>I made an App!</title>
-      <link>/post/i-made-an-app/</link>
-      <pubDate>Thu, 09 Nov 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/post/i-made-an-app/</guid>
-      <description>It wasn’t that hard to do. I’ll have a full tutorial coming, and perhaps a more developed and polished interface, but the bulk of the project is embedded below. It’s written using Shiny in R. I’ve wanted to get more into interactive visualization for some time and just haven’t had the time or energy to try to learn. In academia you don’t really have a call (at present) to develop these interactive visualization skills for work - journal articles don’t require interactives.</description>
-    </item>
-    
-    <item>
-      <title>Git for RR workflow, part two</title>
-      <link>/post/git-for-rr-workflow-part-two/</link>
-      <pubDate>Fri, 18 Aug 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/post/git-for-rr-workflow-part-two/</guid>
-      <description>It’s impossible to talk about how social scientists can use git without talking about project management so this will be a bit of a Frankenstein’s monster of a post.
-In the spirit of full transparency, I have to admit that I do not use and am probably unaware of the vast majority of git functionality. I’m not a computer programmer, I’m a psychologist. I don’t really need to know how to branch down alternate development pathways.</description>
-    </item>
-    
-    <item>
-      <title>Twitter Data</title>
-      <link>/post/twitter-data/</link>
-      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/post/twitter-data/</guid>
-      <description>Update November 2018: You now need to apply for a developer account to get a twitter API token. This process will still work, but not until your developer account ahs been approved. I have not applied for a dveloper account so the final output is no longer generating.
-I’m not very good with words.
-At least from an analytical sense - I’m more comfortable with numbers. I say this not to criticize qualitative work, but to be up front with my limitations.</description>
-    </item>
-    
-    <item>
-      <title>Git for RR workflow, part one</title>
-      <link>/post/git-for-rr-workflow-part-one/</link>
-      <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/post/git-for-rr-workflow-part-one/</guid>
-      <description>The first step in a reproducible research workflow starts with Version Control. If you are unfamiliar with Version Control Systems, I’ll provide a brief overview of git. If you are already familiar with git, skip this. There are other programs that accomplish similar ends, but I’m most familiar with git and github, so I’m going to limit my discussion to those tools.
-Git was originally created to track development of the Linux kernel.</description>
-    </item>
-    
-    <item>
-      <title>Reproducible Research</title>
-      <link>/post/reproducible-research/</link>
-      <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/post/reproducible-research/</guid>
-      <description>This is the first post in a short series I am going to do on workflow and reproducible research. I’m going to detail the process I use on a pretty granular level, because some of the tools (version control and git, Markdown, knitting in R, etc.) may not be familiar, and because I did a lot of troubleshooting along the way. But first, it’s important to explain my motivation to learn the tools that make up this workflow.</description>
-    </item>
     
     <item>
       <title>About me</title>

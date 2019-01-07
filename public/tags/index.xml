@@ -7,37 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>youremail@domain.com (Some Person)</managingEditor>
     <webMaster>youremail@domain.com (Some Person)</webMaster>
-    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Reproducible Research</title>
-      <link>/tags/reproducible-research/</link>
-      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/tags/reproducible-research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shiny</title>
-      <link>/tags/shiny/</link>
-      <pubDate>Thu, 09 Nov 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/tags/shiny/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Twitter</title>
-      <link>/tags/twitter/</link>
-      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
-      <guid>/tags/twitter/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
