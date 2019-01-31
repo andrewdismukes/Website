@@ -7,3 +7,4 @@ hugo
 gsutil -m rsync -R public gs://www.dismukes.io
 
 echo Deployment completed!
+

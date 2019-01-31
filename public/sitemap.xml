@@ -3,37 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>http://www.dismukes.io/</loc>
   </url>
   
   <url>
-    <loc>/page/about/</loc>
+    <loc>http://www.dismukes.io/page/about/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>http://www.dismukes.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/page/code/</loc>
+    <loc>http://www.dismukes.io/page/code/</loc>
   </url>
   
   <url>
-    <loc>/page/conferences/</loc>
+    <loc>http://www.dismukes.io/page/conferences/</loc>
   </url>
   
   <url>
-    <loc>/page/</loc>
+    <loc>http://www.dismukes.io/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/page/papers/</loc>
+    <loc>http://www.dismukes.io/page/papers/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://www.dismukes.io/tags/</loc>
     <priority>0</priority>
   </url>
   
