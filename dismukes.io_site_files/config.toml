@@ -102,10 +102,22 @@ googleAnalytics = "UA-105310152-2"
     weight = 3
     
 [[menu.main]]
+    identifier = "CV"
     name = "CV"
-    url = "https://github.com/andrewdismukes/Website/blob/master/docs/CV/Dismukes_CV.pdf"
     weight = 3
+    
+[[menu.main]]
+    parent = "CV"
+    name = "Github hosted PDF"
+    url = "https://github.com/andrewdismukes/CV/blob/master/Dismukes_CV.pdf"
+    weight = 1
 
+[[menu.main]]
+    parent = "CV"
+    name = "HTML Version"
+    url = "http://reports.dismukes.io/CV/Dismukes_CV.html"
+    weight = 2
+    
 [[menu.main]]
     name = "Tags"
     url = "tags"
